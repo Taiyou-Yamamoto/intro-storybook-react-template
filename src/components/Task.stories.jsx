@@ -1,4 +1,4 @@
-import Task from './Taks';
+import Task from './Task';
 
 export default {
   component: Task,
