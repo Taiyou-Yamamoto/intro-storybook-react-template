@@ -1,5 +1,4 @@
-import React from 'react';
-import PropType from 'prop-types';
+import PropTypes from 'prop-types';
 
 // type TaskProps = {
 //   task: {
@@ -42,10 +41,10 @@ export default function Task({ task: { id, title, state } }) {
   );
 }
 
-Task.PropType = {
-  task: PropType.shape({
-    id: PropType.string.isRequired,
-    title: PropType.string.isRequired,
-    state: PropType.string.isRequired,
+Task.propTypes = {
+  task: PropTypes.shape({
+    id: PropTypes.string.isRequired,
+    title: PropTypes.string.isRequired,
+    state: PropTypes.string.isRequired,
   }),
 };
